@@ -18,25 +18,6 @@ Centralizar, sincronizar y optimizar la administración de eventos personales/pr
 - **Contenedores**: Docker / Docker Compose
 - **Control de versiones**: Git/GitHub
 
-## 🔐 Seguridad y Cumplimiento
-- OAuth + 2FA, tokens cifrados en BD
-- Logs de auditoría
-- GDPR/CCPA (privacidad por diseño)
-
-## 📈 KPIs
-- Tiempo de sincronización **< 500ms**
-- Disponibilidad **99.99%**
-- Precisión de notificaciones **99.5%**
-
----
-
-## 🏗️ Arquitectura (vista lógica)
-- **api/**: REST (auth, eventos, filtros, estadísticas)
-- **sync/**: integración OAuth + Webhooks (Google/Outlook), reconciliación de cambios
-- **notifier/**: envíos WhatsApp/email, reintentos, bitácora
-- **web/**: UI estática (HTML/CSS) consumiendo API
-- **infra/**: Dockerfiles, docker-compose, nginx
-
 ```
 agenda-assistant/
  ├─ api/
